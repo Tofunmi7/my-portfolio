@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Portfolio</title>
+  <script>
+    (function() {
+      try {
+        if (localStorage.getItem('darkMode') === 'enabled') {
+          document.body.classList.add('dark-mode');
+        }
+      } catch(e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>OLUMUYIWA OLUWATOFUNMI</h1>
+    <div class="header-right">
+      <label class="dark-mode-switch" aria-label="Toggle dark mode">
+        <input type="checkbox" id="dark-mode-toggle" />
+        <i class="fas fa-moon"></i>
+        <span class="slider"></span>
+        <span class="toggle-label">Darkmode</span>
+      </label>
+    </div>
+    <div class="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Me</a>
+      <a href="projects-skills.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>I'm a 100 lvl computer science student of Bells University of Technology passionate about building user friendly web applications. I'm deeply interested in frontend development and would like to become professional in that aspect.</p>
+      <p>I'm currently learning HTML, CSS and JavaScript and building my skills in responsive design. I chose web development because of the fact it combines creativity with problem solving.</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2024 OLUMUYIWA OLUWATOFUNMI. All rights reserved. <span id="date-time"></span>
+    <div class="social-links">
+      <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+      <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

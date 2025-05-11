@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <script>
+    (function() {
+      try {
+        if (localStorage.getItem('darkMode') === 'enabled') {
+          document.body.classList.add('dark-mode');
+        }
+      } catch(e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papb+X+6Q6X+6X+6Q6X+6Q6X+6Q6X+6Q6X+6Q6X+6Q6X+6Q6X+6Q6X+6Q6X+6Q6X+6Q6X+6Q6X+6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <h1>OLUMUYIWA OLUWATOFUNMI</h1>
+    <div class="header-right">
+      <label class="dark-mode-switch" aria-label="Toggle dark mode">
+        <input type="checkbox" id="dark-mode-toggle" />
+        <i class="fas fa-moon"></i>
+        <span class="slider"></span>
+        <span class="toggle-label">Darkmode</span>
+      </label>
+    </div>
+    <div class="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects-skills.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content" style="flex-direction: row-reverse;">
+        <img src="tof.png" alt="Profile Image" class="hero-image" />
+        <div class="hero-text">
+          <h2>Welcome to My Portfolio</h2>
+          <p>Hi! I'm a passionate developer specializing in building modern and responsive web applications.</p>
+          <p>Use the navigation above to explore my work and skills.</p>
+          <a href="projects-skills.html" class="cta-button">View My Projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2024 OLUMUYIWA OLUWATOFUNMI. All rights reserved. <span id="date-time"></span>
+    <div class="social-links">
+      <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer">WhatsApp</a> |
+      <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">Instagram</a> |
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+      <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">Facebook</a> |
+      <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
